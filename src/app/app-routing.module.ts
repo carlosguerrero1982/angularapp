@@ -38,7 +38,7 @@ children: [
 
 
 @NgModule({
-  declarations: [],
+  
   imports: [RouterModule.forRoot(routes) 
   ],
   exports: [RouterModule]
