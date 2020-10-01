@@ -1,8 +1,10 @@
 <div class="input-group">
     <span class="input-group-btn">
-        <button class="btn btn-primary"
+        <button 
 
             (click)="cambiarValor(-5)"
+
+            [ngClass]="btnClass"
 
            type="button">
 
@@ -12,18 +14,25 @@
 
     </span>
         <input type="number"
+        (ngModelChange)="onChange($event)"
+        [ngClass]="{'is-invalid': progreso>100 || progreso<0}"
          class="form-control" 
         placeholder="Progreso"
         [(ngModel)]="progreso">
-
+        
 
         <span class="input-group-btn">
-            <button class="btn btn-primary" 
+           
+           
+           
+            <button [ngClass]="btnClass"
             
             (click)="cambiarValor(5)"
 
             type="button">
                 <i class="fa fa-plus"></i>
             </button>
+
+
     </span>
 </div>
