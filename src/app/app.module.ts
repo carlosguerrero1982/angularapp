@@ -16,11 +16,14 @@ import { AppComponent } from './app.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
    
-    NopagefoundComponent,
+    NopagefoundComponent
+   
+
    
   ],
   imports: [

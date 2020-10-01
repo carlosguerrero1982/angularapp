@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../components/components.module';
 import {RouterModule} from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
@@ -33,7 +34,8 @@ import{FormsModule} from '@angular/forms';
     CommonModule,
     SharedModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }
