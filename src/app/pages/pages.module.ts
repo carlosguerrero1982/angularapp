@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import{FormsModule} from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import{FormsModule} from '@angular/forms';
     Grafica1Component,
     PagesComponent,
     DashboardComponent,
-
+    ChartsModule
 
   ],
 
@@ -35,7 +36,8 @@ import{FormsModule} from '@angular/forms';
     SharedModule,
     RouterModule,
     FormsModule,
-    ComponentsModule
+    ComponentsModule,
+    ChartsModule
   ]
 })
 export class PagesModule { }
